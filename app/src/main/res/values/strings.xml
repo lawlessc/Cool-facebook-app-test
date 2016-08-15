@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cool App</string>
+    <string name="facebook_app_id">1645516442442732</string>
+    <string name="fb_login_protocol_scheme">1645516442442732</string>
+    <string name="profile_photo_description">The users profile photo.</string>
+
+
+
+    <string name="users_name">Name:</string>
+    <string name="date_of_birth">DOB:</string>
+    <string name="email_address">Email:</string>
+    <string name="back_button">Back</string>
+    <string name="film_preferences_button">Movie Preferences</string>
+
+
+</resources>
