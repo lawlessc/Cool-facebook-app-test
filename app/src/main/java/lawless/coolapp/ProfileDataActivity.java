@@ -65,15 +65,17 @@ public class ProfileDataActivity  extends AppCompatActivity {
 
     public void return_to_login()
     {
-        Intent myIntent = new Intent(this, LoginActivity.class);
-        this.startActivity(myIntent);
+        Intent Intent = new Intent(this, LoginActivity.class);
+        Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        this.startActivity(Intent);
+
     }
 
     public void goToFilmPreferences()
 
     {
         Intent Intent = new Intent(this, FilmPreferencesActivity.class);
-        Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        //Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         this.startActivity(Intent);
 
 

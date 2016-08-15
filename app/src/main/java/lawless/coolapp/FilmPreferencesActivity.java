@@ -58,8 +58,9 @@ public class FilmPreferencesActivity extends AppCompatActivity {
 
     public void return_to_login()
     {
-        Intent myIntent = new Intent(this, LoginActivity.class);
-        this.startActivity(myIntent);
+        Intent Intent = new Intent(this, LoginActivity.class);
+        Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        this.startActivity(Intent);
     }
 
 
@@ -67,7 +68,7 @@ public class FilmPreferencesActivity extends AppCompatActivity {
 
     {
         Intent Intent = new Intent(this, ProfileDataActivity.class);
-        Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+      //  Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         this.startActivity(Intent);
     }
 
