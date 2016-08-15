@@ -81,9 +81,9 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login()
     {
-        System.out.println("Login Called");
-        Intent myIntent = new Intent(this , ProfileDataActivity.class);
-        this.startActivity(myIntent);
+        Intent Intent = new Intent(this , ProfileDataActivity.class);
+        Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        this.startActivity(Intent);
     }
 
 }

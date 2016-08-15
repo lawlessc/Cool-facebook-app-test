@@ -72,8 +72,11 @@ public class ProfileDataActivity  extends AppCompatActivity {
     public void goToFilmPreferences()
 
     {
-        Intent myIntent = new Intent(this, FilmPreferencesActivity.class);
-        this.startActivity(myIntent);
+        Intent Intent = new Intent(this, FilmPreferencesActivity.class);
+        Intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        this.startActivity(Intent);
+
+
     }
 
     public class FilmPreferencesButtonListener implements View.OnClickListener
