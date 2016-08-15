@@ -39,8 +39,8 @@ public class ProfileDetailsFragment extends Fragment {
             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.profile_data_fragment, container, false);
         name = (TextView) view.findViewById(R.id.user_name_text);
-        email = (TextView) view.findViewById(R.id.date_of_birth);
-        birthday = (TextView) view.findViewById(R.id.email_address);
+        birthday = (TextView) view.findViewById(R.id.date_of_birth);
+        email = (TextView) view.findViewById(R.id.email_address);
 
         getProfileData();
 
